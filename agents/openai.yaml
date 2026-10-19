@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sharpen"
+  short_description: "Turn a rough request into a stronger assignment"
+  default_prompt: "Use $sharpen to help me think through this request and turn it into a clear, useful prompt."
