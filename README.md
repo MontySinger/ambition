@@ -24,7 +24,7 @@ With Git installed, run this in your terminal to add Sharpen to your personal sk
 
 ```sh
 mkdir -p ~/.agents/skills
-git clone https://github.com/MSizzle/sharpen.git ~/.agents/skills/sharpen
+git clone https://github.com/MontySinger/sharpen.git ~/.agents/skills/sharpen
 ```
 
 If Sharpen is already installed, review or back it up before replacing it. The clone command refuses to overwrite a nonempty folder. Codex should detect the skill automatically; restart it if Sharpen does not appear. See the [official skills documentation](https://learn.chatgpt.com/docs/build-skills) for local discovery and installation details.
@@ -125,11 +125,11 @@ After a real assignment, check whether you could use the result, whether importa
 
 Felix Rieseberg’s article supplied the starting point: reconsider the outcome, go deeper into professional methods and source material, and draw useful techniques from other fields. Sharpen turns those ideas into a reusable workflow with refinement and execution modes, selective questions, and observable checks.
 
-Created by [Monty Singer](https://github.com/MSizzle). This is an independent implementation. The linked article remains Felix’s work; no endorsement is implied.
+Created by [Monty Singer](https://github.com/MontySinger). This is an independent implementation. The linked article remains Felix’s work; no endorsement is implied.
 
 ## Contribute
 
-[Open an issue](https://github.com/MSizzle/sharpen/issues) with a real example: the rough request, what went wrong, and what a useful result would have looked like. Remove private information before sharing. Improvements should make the skill easier to use or improve the resulting work.
+[Open an issue](https://github.com/MontySinger/sharpen/issues) with a real example: the rough request, what went wrong, and what a useful result would have looked like. Remove private information before sharing. Improvements should make the skill easier to use or improve the resulting work.
 
 The instructions are in [SKILL.md](SKILL.md), with Codex display metadata in [agents/openai.yaml](agents/openai.yaml). The illustrated demo is built from [scripts/render_demo.py](scripts/render_demo.py); its captions are also covered in the examples above.
 
