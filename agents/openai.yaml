@@ -1,4 +1,4 @@
 interface:
   display_name: "Ambition"
-  short_description: "Turn a rough request into a stronger assignment"
-  default_prompt: "Use $ambition to help me think through this request and turn it into a clear, useful prompt."
+  short_description: "Find a better approach and turn it into a useful brief"
+  default_prompt: "Use $ambition to find a more useful approach to this request and give me a clear prompt with a practical way to check the result."
