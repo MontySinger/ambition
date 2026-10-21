@@ -51,7 +51,7 @@ def draw_frame(stage):
         draw.line([(x * SCALE, y * SCALE) for x, y in points], fill=fill, width=width * SCALE)
 
     draw.rectangle((48 * SCALE, 43 * SCALE, 61 * SCALE, 56 * SCALE), fill=ORANGE)
-    text(75, 37, "SHARPEN", 20, ORANGE, "mono")
+    text(75, 37, "AMBITION", 20, ORANGE, "mono")
     text(916, 39, "A WORKED EXAMPLE", 15, MUTED, "mono")
     text(48, 88, "Give the work a purpose.", 59, kind="serif")
     text(50, 171, "Start with the request you already have.", 24, MUTED)
@@ -60,7 +60,7 @@ def draw_frame(stage):
     text(48, 251, "YOUR ROUGH REQUEST", 16, MUTED, "mono")
     text(48, 295, "Research this", 36, kind="serif")
     text(48, 342, "company.", 36, kind="serif")
-    text(48, 435, "$sharpen", 23, ORANGE, "mono")
+    text(48, 435, "$ambition", 23, ORANGE, "mono")
     text(48, 478, "What do you need", 21, MUTED)
     text(48, 509, "the research to help you do?", 21, MUTED)
 
@@ -98,12 +98,12 @@ def main():
     assets = ROOT / "assets"
     assets.mkdir(exist_ok=True)
     frames = [draw_frame(stage) for stage in range(3)]
-    frames[-1].save(assets / "sharpen-demo.png", optimize=True)
+    frames[-1].save(assets / "ambition-demo.png", optimize=True)
     # Reuse one palette across frames to keep text and colors stable.
     palette = frames[-1].quantize(colors=128, method=Image.Quantize.MEDIANCUT)
     indexed = [frame.quantize(palette=palette, dither=Image.Dither.NONE) for frame in frames]
     indexed[0].save(
-        assets / "sharpen-demo.gif",
+        assets / "ambition-demo.gif",
         save_all=True,
         append_images=indexed[1:],
         duration=[3500, 4500, 8000],
@@ -111,7 +111,7 @@ def main():
         disposal=2,
         optimize=True,
     )
-    for name in ["sharpen-demo.gif", "sharpen-demo.png"]:
+    for name in ["ambition-demo.gif", "ambition-demo.png"]:
         path = assets / name
         print(f"{path.relative_to(ROOT)}: {path.stat().st_size:,} bytes")
 

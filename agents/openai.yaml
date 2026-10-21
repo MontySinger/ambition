@@ -1,4 +1,4 @@
 interface:
-  display_name: "Sharpen"
+  display_name: "Ambition"
   short_description: "Turn a rough request into a stronger assignment"
-  default_prompt: "Use $sharpen to help me think through this request and turn it into a clear, useful prompt."
+  default_prompt: "Use $ambition to help me think through this request and turn it into a clear, useful prompt."

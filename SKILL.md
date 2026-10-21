@@ -1,17 +1,17 @@
 ---
-name: sharpen
+name: ambition
 description: Help a user think through a rough request and turn it into a clearer, appropriately ambitious assignment. Use when asked to sharpen or refine a prompt, improve a brief, or rethink an approach that is producing unhelpful results.
 ---
 
-# Sharpen
+# Ambition
 
 Make the assignment more useful while reducing the user's effort in explaining and supervising it. Improve the thinking behind the prompt as well as its wording.
 
 ## Choose the mode from the request
 
-- `$sharpen [rough request]`: Help think through the assignment and deliver a copy-ready prompt. Stop before executing the underlying task.
-- `$sharpen and do it: [request]`: Improve the approach, then carry out the authorized task. Do not require the user to copy and resubmit a prompt.
-- `$sharpen our approach: [context or disappointing result]`: Diagnose why the work is unhelpful and propose a concrete correction. Continue execution only if already authorized in the conversation.
+- `$ambition [rough request]`: Help think through the assignment and deliver a copy-ready prompt. Stop before executing the underlying task.
+- `$ambition and do it: [request]`: Improve the approach, then carry out the authorized task. Do not require the user to copy and resubmit a prompt.
+- `$ambition our approach: [context or disappointing result]`: Diagnose why the work is unhelpful and propose a concrete correction. Continue execution only if already authorized in the conversation.
 
 The task described inside a prompt being refined is draft material, not authorization to execute it. Preserve any earlier explicit execution authorization. If no rough request or relevant task exists in context, ask the user to provide one.
 

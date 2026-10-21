@@ -1,18 +1,18 @@
-# Sharpen
+# Ambition
 
 **Turn a rough request into a stronger assignment.**
 
-A small AI agent skill for thinking through what you want, choosing useful methods, and checking the result. Start with whatever you would normally type. Sharpen helps turn it into work with a clear purpose.
+A small AI agent skill for thinking through what you want, choosing useful methods, and checking the result. Start with whatever you would normally type. Ambition helps turn it into work with a clear purpose.
 
-![Illustrated example: Sharpen turns “Research this company” into an assignment with a decision to support, evidence to use, and a way to check the result.](assets/sharpen-demo.gif)
+![Illustrated example: Ambition turns “Research this company” into an assignment with a decision to support, evidence to use, and a way to check the result.](assets/ambition-demo.gif)
 
-[Quick start](#quick-start) · [The takeaways](#the-takeaways) · [Examples](#examples) · [How to use it well](#how-to-use-it-well) · [Still image](assets/sharpen-demo.png)
+[Quick start](#quick-start) · [The takeaways](#the-takeaways) · [Examples](#examples) · [How to use it well](#how-to-use-it-well) · [Still image](assets/ambition-demo.png)
 
 ## About
 
-I made Sharpen after reading Felix Rieseberg’s [How to be more ambitious: A tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/). I wanted a skill I could type before a rough request to help me think through the assignment.
+I made Ambition after reading Felix Rieseberg’s [How to be more ambitious: A tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/). I wanted a skill I could type before a rough request to help me think through the assignment.
 
-“Research this company” leaves a lot undecided. Are you preparing for an interview, deciding whether to buy its product, or looking for a customer? Each purpose calls for different evidence and a different output. Sharpen helps surface those choices before you spend time correcting the work.
+“Research this company” leaves a lot undecided. Are you preparing for an interview, deciding whether to buy its product, or looking for a customer? Each purpose calls for different evidence and a different output. Ambition helps surface those choices before you spend time correcting the work.
 
 The aim is practical: less explaining, fewer corrections, and results you can use. The skill uses relevant context already available, asks when your answer would materially change the assignment, and keeps simple requests simple.
 
@@ -20,39 +20,39 @@ The aim is practical: less explaining, fewer corrections, and results you can us
 
 ### 1. Install in Codex
 
-With Git installed, run this in your terminal to add Sharpen to your personal skills folder:
+With Git installed, run this in your terminal to add Ambition to your personal skills folder:
 
 ```sh
 mkdir -p ~/.agents/skills
-git clone https://github.com/MontySinger/sharpen.git ~/.agents/skills/sharpen
+git clone https://github.com/MontySinger/ambition.git ~/.agents/skills/ambition
 ```
 
-If Sharpen is already installed, review or back it up before replacing it. The clone command refuses to overwrite a nonempty folder. Codex should detect the skill automatically; restart it if Sharpen does not appear. See the [official skills documentation](https://learn.chatgpt.com/docs/build-skills) for local discovery and installation details.
+If Ambition is already installed, review or back it up before replacing it. The clone command refuses to overwrite a nonempty folder. Codex should detect the skill automatically; restart it if Ambition does not appear. See the [official skills documentation](https://learn.chatgpt.com/docs/build-skills) for local discovery and installation details.
 
 ### 2. Give it a real request
 
 ```text
-$sharpen Prepare me for a meeting with a potential customer tomorrow.
+$ambition Prepare me for a meeting with a potential customer tomorrow.
 I want to understand their business and decide what to ask.
 ```
 
-Sharpen explains the main improvement and gives you a prompt to copy and use. You can add constraints or correct an assumption before starting the work.
+Ambition explains the main improvement and gives you a prompt to copy and use. You can add constraints or correct an assumption before starting the work.
 
 ### 3. Add “and do it” when you want the work done
 
 ```text
-$sharpen and do it: Prepare me for a meeting with a potential customer
+$ambition and do it: Prepare me for a meeting with a potential customer
 tomorrow. Use the notes in this project. Give me a short brief and
 questions that help me understand whether we can help them.
 ```
 
 This mode improves the approach and carries out the authorized task in the same conversation. It only uses information and tools your agent can actually access.
 
-**Using another assistant?** The workflow lives in [SKILL.md](SKILL.md). Use it as instructions and adapt the invocation to your host. Sharpen has no required API keys, services, or runtime dependencies of its own. Your assistant supplies the model and any tools needed for the underlying work.
+**Using another assistant?** The workflow lives in [SKILL.md](SKILL.md). Use it as instructions and adapt the invocation to your host. Ambition has no required API keys, services, or runtime dependencies of its own. Your assistant supplies the model and any tools needed for the underlying work.
 
 ## The takeaways
 
-These are the habits Sharpen is designed to make repeatable. You can use them when writing a prompt yourself, too.
+These are the habits Ambition is designed to make repeatable. You can use them when writing a prompt yourself, too.
 
 | Habit | What to ask yourself | What changes in the assignment |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Use the habits that earn their added effort. A small edit can remain a small edi
 **Rough request**
 
 ```text
-$sharpen Research this prospect.
+$ambition Research this prospect.
 ```
 
 **A stronger assignment might be**
@@ -82,20 +82,20 @@ The useful change is a decision to support, a reason to gather evidence, and a s
 ### A brief people can act on
 
 ```text
-$sharpen Help me write a proposal. The reader is the operations lead.
+$ambition Help me write a proposal. The reader is the operations lead.
 They need to decide whether to fund a pilot. Keep it to two pages.
 ```
 
-Sharpen can help identify the evidence, scope, tradeoffs, and success checks the reader needs to make that decision.
+Ambition can help identify the evidence, scope, tradeoffs, and success checks the reader needs to make that decision.
 
 ### Correct an unhelpful direction
 
 ```text
-$sharpen our approach: This report lists facts, but I still cannot
+$ambition our approach: This report lists facts, but I still cannot
 decide what to do. I need to choose between the two options this week.
 ```
 
-Sharpen diagnoses the missing decision criteria or evidence and proposes a concrete correction. Execution continues when the conversation already authorizes it.
+Ambition diagnoses the missing decision criteria or evidence and proposes a concrete correction. Execution continues when the conversation already authorizes it.
 
 These are illustrative examples, not benchmark results or guaranteed outputs.
 
@@ -103,9 +103,9 @@ These are illustrative examples, not benchmark results or guaranteed outputs.
 
 | Say this | Get this |
 | --- | --- |
-| `$sharpen [request]` | A clearer assignment and a copy-ready prompt. |
-| `$sharpen and do it: [request]` | An improved approach followed by the authorized work. |
-| `$sharpen our approach: [context]` | A diagnosis and correction when the current work is unhelpful. |
+| `$ambition [request]` | A clearer assignment and a copy-ready prompt. |
+| `$ambition and do it: [request]` | An improved approach followed by the authorized work. |
+| `$ambition our approach: [context]` | A diagnosis and correction when the current work is unhelpful. |
 
 A task described inside a prompt being refined stays draft material. Earlier execution authorization still applies; new material expansions or consequential actions need authorization.
 
@@ -119,17 +119,17 @@ A task described inside a prompt being refined stays draft material. Earlier exe
 
 ### How to tell whether it helped
 
-After a real assignment, check whether you could use the result, whether important claims had evidence, and how much correcting you had to do. A longer prompt by itself tells you very little. If Sharpen adds questions or process without improving the work, simplify the assignment or report the failure.
+After a real assignment, check whether you could use the result, whether important claims had evidence, and how much correcting you had to do. A longer prompt by itself tells you very little. If Ambition adds questions or process without improving the work, simplify the assignment or report the failure.
 
 ## Inspiration and credit
 
-Felix Rieseberg’s article supplied the starting point: reconsider the outcome, go deeper into professional methods and source material, and draw useful techniques from other fields. Sharpen turns those ideas into a reusable workflow with refinement and execution modes, selective questions, and observable checks.
+Felix Rieseberg’s article supplied the starting point: reconsider the outcome, go deeper into professional methods and source material, and draw useful techniques from other fields. Ambition turns those ideas into a reusable workflow with refinement and execution modes, selective questions, and observable checks.
 
 Created by [Monty Singer](https://github.com/MontySinger). This is an independent implementation. The linked article remains Felix’s work; no endorsement is implied.
 
 ## Contribute
 
-[Open an issue](https://github.com/MontySinger/sharpen/issues) with a real example: the rough request, what went wrong, and what a useful result would have looked like. Remove private information before sharing. Improvements should make the skill easier to use or improve the resulting work.
+[Open an issue](https://github.com/MontySinger/ambition/issues) with a real example: the rough request, what went wrong, and what a useful result would have looked like. Remove private information before sharing. Improvements should make the skill easier to use or improve the resulting work.
 
 The instructions are in [SKILL.md](SKILL.md), with Codex display metadata in [agents/openai.yaml](agents/openai.yaml). The illustrated demo is built from [scripts/render_demo.py](scripts/render_demo.py); its captions are also covered in the examples above.
 
